@@ -1,0 +1,610 @@
+<!DOCTYPE html>
+<html lang="ru" class="page">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1" />
+    <title>Мероприятия</title>
+    <link rel="stylesheet" href="css/fonts.css">
+    <link rel="stylesheet" href="css/plugins/air-datepicker.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/events.css">
+</head>
+
+<body class="page__body">
+    <div class="site-container">
+        <header class="header">
+            <div class="container">
+                <div class="header__wrapper">
+                    <a href="#" class="header__logo">
+                        <img src="img/icon/logo.svg" alt="Нижний" width="162" height="45">
+                    </a>
+                    <nav class="nav" data-menu>
+                        <div class="serach-mob">
+                            <input type="text" placeholder="Что вы ищите?">
+                            <button class="btn-search-mob btn-reset">
+                                <svg width="40" height="40" viewBox="0 0 40 40" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd" clip-rule="evenodd"
+                                        d="M18.3333 6.66659C11.8899 6.66659 6.66659 11.8899 6.66659 18.3333C6.66659 24.7766 11.8899 29.9999 18.3333 29.9999C24.7766 29.9999 29.9999 24.7766 29.9999 18.3333C29.9999 11.8899 24.7766 6.66659 18.3333 6.66659ZM3.33325 18.3333C3.33325 10.049 10.049 3.33325 18.3333 3.33325C26.6175 3.33325 33.3333 10.049 33.3333 18.3333C33.3333 26.6175 26.6175 33.3333 18.3333 33.3333C10.049 33.3333 3.33325 26.6175 3.33325 18.3333Z"
+                                        fill="#8A94F3" />
+                                    <path fill-rule="evenodd" clip-rule="evenodd"
+                                        d="M26.5712 26.5712C27.222 25.9203 28.2773 25.9203 28.9282 26.5712L36.1782 33.8212C36.8291 34.472 36.8291 35.5273 36.1782 36.1782C35.5273 36.8291 34.472 36.8291 33.8212 36.1782L26.5712 28.9282C25.9203 28.2773 25.9203 27.222 26.5712 26.5712Z"
+                                        fill="#8A94F3" />
+                                </svg>
+                            </button>
+                        </div>
+                        <ul class="nav__list list-reset">
+                            <li class="nav__item">
+                                <a class="nav__link" href="#">
+                                    О проекте
+                                </a>
+                            </li>
+                            <li class="nav__item">
+                                <button class="nav__link btn-reset" type="button">
+                                    <span>Направления</span>
+                                    <img src="img/icon/chevron-down.svg" alt="">
+                                </button>
+                                <div class="nav__submenu">
+                                    <ul class="list-reset">
+                                        <li>
+                                            <a href="#">
+                                                Креатив
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#">
+                                                Знания
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#">
+                                                Волонтеры
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#">
+                                                Добрые дела
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#">
+                                                Карьера
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#">
+                                                Спорт
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#">
+                                                Своё дело
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <li class="nav__item">
+                                <a class="nav__link" href="#">
+                                    Мероприятия
+                                </a>
+                            </li>
+                            <li class="nav__item">
+                                <a class="nav__link" href="#">
+                                    В фокусе
+                                </a>
+                            </li>
+                            <li class="nav__item">
+                                <button class="nav__link btn-reset" type="button">
+                                    <span> День молодежи</span>
+                                    <img src="img/icon/chevron-down.svg" alt="">
+                                </button>
+                                <div class="nav__submenu">
+                                    <ul class="list-reset">
+                                        <li>
+                                            <a href="#">
+                                                Событийная афиша
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#">
+                                                Спецпроекты
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#">
+                                                Партнеры
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <li class="nav__item">
+                                <a class="nav__link" href="#">
+                                    Контакты
+                                </a>
+                            </li>
+                        </ul>
+                    </nav>
+                    <div class="header__wrap">
+                        <div class="header__search">
+                            <input type="text" placeholder="Что вы ищите?">
+                        </div>
+                        <button class="btn-search">
+                            <svg width="40" height="40" viewBox="0 0 40 40" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                    d="M18.3333 6.66659C11.8899 6.66659 6.66659 11.8899 6.66659 18.3333C6.66659 24.7766 11.8899 29.9999 18.3333 29.9999C24.7766 29.9999 29.9999 24.7766 29.9999 18.3333C29.9999 11.8899 24.7766 6.66659 18.3333 6.66659ZM3.33325 18.3333C3.33325 10.049 10.049 3.33325 18.3333 3.33325C26.6175 3.33325 33.3333 10.049 33.3333 18.3333C33.3333 26.6175 26.6175 33.3333 18.3333 33.3333C10.049 33.3333 3.33325 26.6175 3.33325 18.3333Z"
+                                    fill="#8A94F3" />
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                    d="M26.5712 26.5712C27.222 25.9203 28.2773 25.9203 28.9282 26.5712L36.1782 33.8212C36.8291 34.472 36.8291 35.5273 36.1782 36.1782C35.5273 36.8291 34.472 36.8291 33.8212 36.1782L26.5712 28.9282C25.9203 28.2773 25.9203 27.222 26.5712 26.5712Z"
+                                    fill="#8A94F3" />
+                            </svg>
+                        </button>
+                        <button class="burger btn-reset" aria-label="Открыть меню" aria-expanded="false" data-burger>
+                            <svg width="43" height="35" viewBox="0 0 43 35" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                    d="M0 2.91665C0 1.30583 1.28345 0 2.86667 0H40.1333C41.7165 0 43 1.30583 43 2.91665C43 4.52747 41.7165 5.8333 40.1333 5.8333H2.86667C1.28345 5.8333 0 4.52747 0 2.91665ZM0 17.4997C0 15.8889 1.28345 14.5831 2.86667 14.5831H40.1333C41.7165 14.5831 43 15.8889 43 17.4997C43 19.1105 41.7165 20.4164 40.1333 20.4164H2.86667C1.28345 20.4164 0 19.1105 0 17.4997ZM2.86667 29.1666C1.28345 29.1666 0 30.4725 0 32.0833C0 33.6941 1.28345 34.9999 2.86667 34.9999H40.1333C41.7165 34.9999 43 33.6941 43 32.0833C43 30.4725 41.7165 29.1666 40.1333 29.1666H2.86667Z"
+                                    fill="white" />
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </header>
+       
+        <main class="main main--secondary">
+           <div class="breadcrumbs">
+                <div class="container breadcrumbs__container">
+                    <ul class="breadcrumbs__list list-reset">
+                        <li class="breadcrumbs__item">
+                            <a href="#" class="breadcrumbs__link">
+                                Главная
+                            </a>
+                        </li>
+                        <li class="breadcrumbs__item">
+                            <a href="#" class="breadcrumbs__link">
+                                Мероприятия
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+           </div>
+           <section class="events events--page">
+            <div class="container events__container">
+                <div class="events__head">
+                    <h2 class="events__title section-title">
+                        Мероприятия
+                    </h2>
+                    <div class="events__calendar">
+                        <div class="calendar-text">
+                            <span>даты мероприятий</span>
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M5.29289 8.29289C5.68342 7.90237 6.31658 7.90237 6.70711 8.29289L12 13.5858L17.2929 8.29289C17.6834 7.90237 18.3166 7.90237 18.7071 8.29289C19.0976 8.68342 19.0976 9.31658 18.7071 9.70711L12.7071 15.7071C12.3166 16.0976 11.6834 16.0976 11.2929 15.7071L5.29289 9.70711C4.90237 9.31658 4.90237 8.68342 5.29289 8.29289Z" fill="#A9B0F4"/>
+                            </svg>
+                        </div>
+                        <input type="checkbox" id="date">
+                    </div>
+                </div>
+                <div class="events__categories">
+                    <ul class="categories list-reset">
+                        <li class="categories__item">
+                            <button type="button" class="categories__btn btn-reset active">
+                                все мероприятия
+                            </button>
+                        </li>
+                        <li class="categories__item">
+                            <button type="button" class="categories__btn btn-reset">
+                                креатив
+                            </button>
+                        </li>
+                        <li class="categories__item">
+                            <button type="button" class="categories__btn btn-reset">
+                                спорт
+                            </button>
+                        </li>
+                        <li class="categories__item">
+                            <button type="button" class="categories__btn btn-reset">
+                                карьера
+                            </button>
+                        </li>
+                        <li class="categories__item">
+                            <button type="button" class="categories__btn btn-reset">
+                                своё дело
+                            </button>
+                        </li>
+                        <li class="categories__item">
+                            <button type="button" class="categories__btn btn-reset">
+                                волонтёры
+                            </button>
+                        </li>
+                        <li class="categories__item">
+                            <button type="button" class="categories__btn btn-reset">
+                                800 добрых дел
+                            </button>
+                        </li>
+                    </ul>
+                </div>
+                <div class="events__grid events__grid--page">
+                    <a href="#" class="events__item">
+                        <div class="events__img">
+                            <img src="img/events/events-item.jpg"
+                                alt="День студента пройдет в «Рекорде» студента пройдет в «Рекорде»" width="351"
+                                height="264">
+                        </div>
+                        <div class="events__wrap">
+                            <div class="events__date">
+                                25-24-23 января 2023 г.
+                            </div>
+                            <h4 class="events__name">
+                                День студента пройдет в «Рекорде» студента пройдет в «Рекорде»
+                                День студента пройдет в «Рекорде» студента пройдет в «Рекорде»
+                            </h4>
+                        </div>
+                    </a>
+                    <a href="#" class="events__item">
+                        <div class="events__img">
+                            <img src="img/events/events-item.jpg"
+                                alt="День студента пройдет в «Рекорде» студента пройдет в «Рекорде»" width="351"
+                                height="264">
+                        </div>
+                        <div class="events__wrap">
+                            <div class="events__date">
+                                25 января 2023 г.
+                            </div>
+                            <h4 class="events__name">
+                                День студента пройдет в «Рекорде» студента пройдет в «Рекорде»
+                            </h4>
+                        </div>
+                    </a>
+                    <a href="#" class="events__item">
+                        <div class="events__img">
+                            <img src="img/events/events-item.jpg"
+                                alt="День студента пройдет в «Рекорде» студента пройдет в «Рекорде»" width="351"
+                                height="264">
+                        </div>
+                        <div class="events__wrap">
+                            <div class="events__date">
+                                25 января 2023 г.
+                            </div>
+                            <h4 class="events__name">
+                                День студента пройдет в «Рекорде» студента пройдет в «Рекорде»
+                            </h4>
+                        </div>
+                    </a>
+                    <a href="#" class="events__item">
+                        <div class="events__img">
+                            <img src="img/events/events-item.jpg"
+                                alt="День студента пройдет в «Рекорде» студента пройдет в «Рекорде»" width="351"
+                                height="264">
+                        </div>
+                        <div class="events__wrap">
+                            <div class="events__date">
+                                25 января 2023 г.
+                            </div>
+                            <h4 class="events__name">
+                                День студента пройдет в «Рекорде» студента пройдет в «Рекорде»
+                            </h4>
+                        </div>
+                    </a>
+                    <a href="#" class="events__item">
+                        <div class="events__img">
+                            <img src="img/events/events-item.jpg"
+                                alt="День студента пройдет в «Рекорде» студента пройдет в «Рекорде»" width="351"
+                                height="264">
+                        </div>
+                        <div class="events__wrap">
+                            <div class="events__date">
+                                25 января 2023 г.
+                            </div>
+                            <h4 class="events__name">
+                                День студента пройдет в «Рекорде» студента пройдет в «Рекорде»
+                            </h4>
+                        </div>
+                    </a>
+                    <a href="#" class="events__item">
+                        <div class="events__img">
+                            <img src="img/events/events-item.jpg"
+                                alt="День студента пройдет в «Рекорде» студента пройдет в «Рекорде»" width="351"
+                                height="264">
+                        </div>
+                        <div class="events__wrap">
+                            <div class="events__date">
+                                25 января 2023 г.
+                            </div>
+                            <h4 class="events__name">
+                                День студента пройдет в «Рекорде» студента пройдет в «Рекорде»
+                            </h4>
+                        </div>
+                    </a>
+                    <a href="#" class="events__item">
+                        <div class="events__img">
+                            <img src="img/events/events-item.jpg"
+                                alt="День студента пройдет в «Рекорде» студента пройдет в «Рекорде»" width="351"
+                                height="264">
+                        </div>
+                        <div class="events__wrap">
+                            <div class="events__date">
+                                25 января 2023 г.
+                            </div>
+                            <h4 class="events__name">
+                                День студента пройдет в «Рекорде» студента пройдет в «Рекорде»
+                            </h4>
+                        </div>
+                    </a>
+                    <a href="#" class="events__item">
+                        <div class="events__img">
+                            <img src="img/events/events-item.jpg"
+                                alt="День студента пройдет в «Рекорде» студента пройдет в «Рекорде»" width="351"
+                                height="264">
+                        </div>
+                        <div class="events__wrap">
+                            <div class="events__date">
+                                25 января 2023 г.
+                            </div>
+                            <h4 class="events__name">
+                                День студента пройдет в «Рекорде» студента пройдет в «Рекорде»
+                            </h4>
+                        </div>
+                    </a>
+                    <a href="#" class="events__item">
+                        <div class="events__img">
+                            <img src="img/events/events-item.jpg"
+                                alt="День студента пройдет в «Рекорде» студента пройдет в «Рекорде»" width="351"
+                                height="264">
+                        </div>
+                        <div class="events__wrap">
+                            <div class="events__date">
+                                25 января 2023 г.
+                            </div>
+                            <h4 class="events__name">
+                                День студента пройдет в «Рекорде» студента пройдет в «Рекорде»
+                            </h4>
+                        </div>
+                    </a>
+                </div>
+                <button type="button" class="b-btn btn-reset b-btn--primary">
+                    <span>Показать еще</span>
+                    <svg width="43" height="36" viewBox="0 0 43 36" fill="none"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M26.7922 31.9936C28.9944 30.2406 31.1985 28.4906 33.4044 26.7438C36.0209 24.6644 38.6271 22.5762 41.2544 20.5105C41.5108 20.3404 41.7167 20.1025 41.8502 19.8223C41.9837 19.5421 42.0396 19.2302 42.0119 18.9201C42.0059 18.8083 42.0058 18.6962 42.0118 18.5844C42.0485 18.2371 41.9718 17.8872 41.7936 17.5887C41.6153 17.2902 41.3455 17.0596 41.0256 16.9327C37.2663 15.0657 33.5148 13.1784 29.7593 11.3013C26.1163 9.47983 22.4717 7.65851 18.8255 5.83733C18.6105 5.73232 18.3719 5.68726 18.1342 5.70672C17.8965 5.72619 17.6681 5.80949 17.4724 5.94813C17.2766 6.08677 17.1206 6.27577 17.0201 6.49583C16.9197 6.7159 16.8784 6.95915 16.9006 7.20074C16.9249 7.43085 17.0061 7.65096 17.1365 7.84056C17.267 8.03015 17.4425 8.18306 17.6467 8.28504L37.2635 18.0923C37.7833 18.3526 38.303 18.6128 38.868 18.8983C38.7278 19.0202 38.6283 19.1142 38.5185 19.1994L33.6271 23.0772L26.5374 28.7247C26.0357 29.1197 25.5336 29.5098 25.0375 29.914C24.8362 30.0667 24.6808 30.2735 24.5888 30.5113C24.4969 30.749 24.4721 31.0081 24.5171 31.2595C24.5506 31.4943 24.6475 31.7151 24.797 31.8972C24.9465 32.0793 25.1427 32.2156 25.3639 32.291C25.6062 32.3769 25.8668 32.3945 26.1182 32.3422C26.3696 32.2898 26.6025 32.1694 26.7922 31.9936Z"
+                            fill="black" />
+                        <rect y="17.4484" width="42.0851" height="2.67605" rx="1.33802" fill="black" />
+                    </svg>
+                </button>
+            </div>
+           </section>
+           <section class="events events--past">
+            <div class="container events__container">
+                <div class="events__head">
+                    <h2 class="events__title events__title--noactive section-title">
+                        Мероприятия
+                    </h2>
+                </div>
+                <div class="events__grid events__grid--past">
+                    <a href="#" class="events__item events__item--none">
+                        <div class="events__img">
+                            <img src="img/events/events-item.jpg"
+                                alt="День студента пройдет в «Рекорде» студента пройдет в «Рекорде»" width="351"
+                                height="264">
+                        </div>
+                        <div class="events__wrap">
+                            <div class="events__date">
+                                25-24-23 января 2023 г.
+                            </div>
+                            <h4 class="events__name">
+                                День студента пройдет в «Рекорде» студента пройдет в «Рекорде»
+                                День студента пройдет в «Рекорде» студента пройдет в «Рекорде»
+                            </h4>
+                        </div>
+                    </a>
+                    <a href="#" class="events__item events__item--none">
+                        <div class="events__img">
+                            <img src="img/events/events-item.jpg"
+                                alt="День студента пройдет в «Рекорде» студента пройдет в «Рекорде»" width="351"
+                                height="264">
+                        </div>
+                        <div class="events__wrap">
+                            <div class="events__date">
+                                25 января 2023 г.
+                            </div>
+                            <h4 class="events__name">
+                                День студента пройдет в «Рекорде» студента пройдет в «Рекорде»
+                            </h4>
+                        </div>
+                    </a>
+                    <a href="#" class="events__item events__item--none">
+                        <div class="events__img">
+                            <img src="img/events/events-item.jpg"
+                                alt="День студента пройдет в «Рекорде» студента пройдет в «Рекорде»" width="351"
+                                height="264">
+                        </div>
+                        <div class="events__wrap">
+                            <div class="events__date">
+                                25 января 2023 г.
+                            </div>
+                            <h4 class="events__name">
+                                День студента пройдет в «Рекорде» студента пройдет в «Рекорде»
+                            </h4>
+                        </div>
+                    </a>
+                </div>
+                <button type="button" class="b-btn btn-reset b-btn--primary">
+                    <span>Показать еще</span>
+                    <svg width="43" height="36" viewBox="0 0 43 36" fill="none"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M26.7922 31.9936C28.9944 30.2406 31.1985 28.4906 33.4044 26.7438C36.0209 24.6644 38.6271 22.5762 41.2544 20.5105C41.5108 20.3404 41.7167 20.1025 41.8502 19.8223C41.9837 19.5421 42.0396 19.2302 42.0119 18.9201C42.0059 18.8083 42.0058 18.6962 42.0118 18.5844C42.0485 18.2371 41.9718 17.8872 41.7936 17.5887C41.6153 17.2902 41.3455 17.0596 41.0256 16.9327C37.2663 15.0657 33.5148 13.1784 29.7593 11.3013C26.1163 9.47983 22.4717 7.65851 18.8255 5.83733C18.6105 5.73232 18.3719 5.68726 18.1342 5.70672C17.8965 5.72619 17.6681 5.80949 17.4724 5.94813C17.2766 6.08677 17.1206 6.27577 17.0201 6.49583C16.9197 6.7159 16.8784 6.95915 16.9006 7.20074C16.9249 7.43085 17.0061 7.65096 17.1365 7.84056C17.267 8.03015 17.4425 8.18306 17.6467 8.28504L37.2635 18.0923C37.7833 18.3526 38.303 18.6128 38.868 18.8983C38.7278 19.0202 38.6283 19.1142 38.5185 19.1994L33.6271 23.0772L26.5374 28.7247C26.0357 29.1197 25.5336 29.5098 25.0375 29.914C24.8362 30.0667 24.6808 30.2735 24.5888 30.5113C24.4969 30.749 24.4721 31.0081 24.5171 31.2595C24.5506 31.4943 24.6475 31.7151 24.797 31.8972C24.9465 32.0793 25.1427 32.2156 25.3639 32.291C25.6062 32.3769 25.8668 32.3945 26.1182 32.3422C26.3696 32.2898 26.6025 32.1694 26.7922 31.9936Z"
+                            fill="black" />
+                        <rect y="17.4484" width="42.0851" height="2.67605" rx="1.33802" fill="black" />
+                    </svg>
+                </button>
+            </div>
+           </section>
+        </main>
+        <footer class="footer">
+            <div class="container">
+                <div class="footer__top">
+                    <div class="footer__wrap">
+                        <a href="#" class="footer__logo">
+                            <img src="img/icon/logo.svg" alt="Нижний" width="162" height="45">
+                        </a>
+                        <ul class="socials list-reset">
+                            <li>
+                                <a href="#" target="_blank" class="socials__link">
+                                    <svg width="30" height="30" viewBox="0 0 30 30" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M16.2178 23.1818C6.89975 23.1818 1.58498 17.0392 1.36353 6.81812H6.03106C6.18438 14.3202 9.62532 17.4979 12.3509 18.1531V6.81812H16.746V13.2882C19.4375 13.0098 22.265 10.0614 23.2189 6.81812H27.614C26.8815 10.8148 23.8152 13.7632 21.6348 14.9754C23.8152 15.9582 27.3075 18.5298 28.6363 23.1818H23.7982C22.7591 20.0695 20.17 17.6617 16.746 17.3341V23.1818H16.2178Z"
+                                            fill="#8A94F3" />
+                                    </svg>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" target="_blank" class="socials__link">
+                                    <svg width="30" height="30" viewBox="0 0 30 30" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path fill-rule="evenodd" clip-rule="evenodd"
+                                            d="M4.32092 14.2601C10.5437 11.3735 14.6932 9.4705 16.7695 8.55105C22.6975 5.92584 23.9293 5.46981 24.7322 5.45475C24.9087 5.45144 25.3036 5.49803 25.5593 5.71899C25.7753 5.90555 25.8347 6.15758 25.8631 6.33447C25.8915 6.51136 25.927 6.91431 25.8988 7.22917C25.5776 10.8229 24.1876 19.5439 23.4804 23.5689C23.1812 25.2721 22.592 25.8431 22.0216 25.899C20.782 26.0205 19.8407 25.0268 18.6401 24.1888C16.7613 22.8776 15.7 22.0614 13.8763 20.7819C11.7688 19.3032 13.135 18.4905 14.3361 17.1623C14.6504 16.8147 20.1122 11.5253 20.2179 11.0455C20.2311 10.9855 20.2434 10.7618 20.1186 10.6437C19.9937 10.5256 19.8095 10.566 19.6766 10.5981C19.4882 10.6436 16.4869 12.7557 10.6727 16.9344C9.8208 17.5573 9.04917 17.8607 8.35781 17.8448C7.59565 17.8273 6.12955 17.386 5.03965 17.0088C3.70286 16.5461 2.64039 16.3015 2.73291 15.5158C2.7811 15.1065 3.31044 14.688 4.32092 14.2601Z"
+                                            fill="#8A94F3" />
+                                    </svg>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="footer__group">
+                        <a href="#" class="footer-link">
+                            О проекте
+                        </a>
+                    </div>
+                    <div class="footer__group dropdown-footer">
+                        <button class="footer-link btn-reset">
+                            <span>Направления</span>
+                            <img src="img/icon/chevron-down.svg" alt="">
+                        </button>
+                        <ul class="footer-nav list-reset">
+                            <li>
+                                <a href="#">
+                                    Креатив
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    Знания
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    Волонтеры
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    Добрые дела
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    Карьера
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    Спорт
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    Своё дело
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="footer__group">
+                        <a href="#" class="footer-link">
+                            Мероприятия
+                        </a>
+                    </div>
+                    <div class="footer__group">
+                        <a href="#" class="footer-link">
+                            В фокусе
+                        </a>
+                    </div>
+                    <div class="footer__group dropdown-footer">
+                        <button class="footer-link btn-reset">
+                            <span>День молодежи</span>
+                            <img src="img/icon/chevron-down.svg" alt="">
+                        </button>
+                        <ul class="footer-nav list-reset">
+                            <li>
+                                <a href="#">
+                                    Событийная афиша
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    Спецпроекты
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    Партнеры
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="footer__group">
+                        <a href="#" class="footer-link">
+                            Контакты
+                        </a>
+                    </div>
+                </div>
+                <div class="footer__bottom">
+                    <div class="footer__links">
+                        <a href="#" class="footer__link">
+                            <span>Политика конфиденциальности</span>
+                        </a>
+                        <a href="#" class="footer__link">
+                            <span> Пользовательское соглашение</span>
+                        </a>
+                    </div>
+                    <div class="footer__copyright">
+                        © Нижний Новгород Молодежная столица России
+                    </div>
+                    <a href="#" class="footer__link footer__link--nounderline">
+                        <span> Разработано R-top</span>
+                    </a>
+                </div>
+            </div>
+        </footer>
+        <div class="modals">
+            <div class="overlay js-overlay"></div>
+            <div class="popup popup--succsess js-popup" data-popup="some-popup">
+            <button type="button" class="popup__close js-popup-close btn-reset"></button>
+            <div class="popup__wrap">
+                <div class="poupp__head">
+                    <h3 class="popup__title">
+                        Успешно
+                    </h3>
+                    <img class="popup__icon" src="img/icon/ok.svg" alt="" width="56" height="52">
+                </div>
+                <div class="popup__text">
+                    <p>
+                        Благодарим вас за предложенные идеи! Менеджер свяжется с вами в ближайшее время.
+                    </p>
+                </div>
+            </div>
+            </div>
+        </div>
+    </div>
+    <script src="libs/air-datepicker.js"></script>
+    <script src="libs/pristie.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/events.js"></script>
+</body>
+
+</html>

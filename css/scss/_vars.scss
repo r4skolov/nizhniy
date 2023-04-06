@@ -1,0 +1,17 @@
+:root {
+    // base
+    --font-family: "Forma DJR Cyrillic Micro", sans-serif;
+    --content-width: 1156px;
+    --container-offset: 22px;
+    --container-width: calc(var(--content-width) + (var(--container-offset) * 2));
+  
+    // colors
+    --white-color: #fff;
+    --black-color: #000000;
+    --primary-color: #3344E5;
+    --secondary-color: #96F400;
+    --gray-color: #808080;
+  
+    --base-transtion: all 0.3s ease 0s;
+    --app-height : 100%;
+}

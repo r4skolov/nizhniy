@@ -1,0 +1,298 @@
+.directions {
+    padding: 55px 0;
+
+    @media screen and (min-width: 768px) {
+        padding: 65px 0;
+    }
+
+
+    @media screen and (min-width: 1366px) {
+        padding: 75px 0;
+    }
+}
+
+.directions__title {
+    margin-bottom: 40px;
+
+    @media screen and (min-width: 768px) {
+        margin-bottom: 50px;
+    }
+
+
+    @media screen and (min-width: 1366px) {
+        margin-bottom: 60px;
+    }
+}
+
+.directions__grid {
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-row-gap: 28px;
+    align-items: flex-start;
+
+    @media screen and (min-width: 768px) {
+        grid-template-columns: repeat(12,1fr);
+        grid-column-gap: 18px;
+        grid-row-gap: 40px;
+    }
+
+
+    @media screen and (min-width: 1366px) {
+        grid-column-gap: 27px;
+        grid-row-gap: 50px;
+    }
+}
+
+
+.directions__item {
+ 
+    border-radius: 20px;
+    height:164px;
+    position: relative;
+    padding: 14px 14px;
+    transition: background-color .3s ease-in, background-image .3s ease-in;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    @media screen and (min-width: 768px) {
+        height:242px;
+        border-radius: 30px;
+        padding: 20px 20px;
+    }
+
+
+    @media screen and (min-width: 1366px) {
+        height:364px;
+    }
+
+    &:hover {
+        background-color: #f3f3f3;
+
+        .directions__link {
+            color: var(--primary-color);
+            transition: color .3s ease-in;
+        }
+
+        svg {
+           
+            path {
+                fill: var(--primary-color);
+                transition: fill .3s ease-in;
+            }
+
+            rect {
+                fill: var(--primary-color);
+                transition: fill .3s ease-in;
+            }
+        }
+    }
+
+    &:nth-child(1) {
+        grid-column: 1/4;
+        background-image: url("../img/directions/directions-one-mob.jpg");
+        
+        @media screen and (min-width: 768px) {
+            grid-column: 1/8;
+            background-image: url("../img/directions/directions-one-tablet.jpg");
+        }
+    
+    
+        @media screen and (min-width: 1366px) {
+            background-image: url("../img/directions/directions-one.jpg");
+        }
+
+        &:hover {
+           
+            @media screen and (min-width: 1366px) {
+                background-image: url("../img/directions/directions-one-hover.jpg");
+            }
+        }
+    }
+
+    &:nth-child(2) {
+        grid-column: 1/4;
+        background-image: url("../img/directions/directions-two-mob.jpg");
+      
+        @media screen and (min-width: 768px) {
+            grid-column: 8/13;
+            background-image: url("../img/directions/directions-two-tablet.jpg");
+        }
+
+        @media screen and (min-width: 1366px) {
+            background-image: url("../img/directions/directions-two.jpg");
+        }
+
+        &:hover {
+            background-image: url("../img/directions/directions-two-hover.jpg");
+        }
+    }
+
+    &:nth-child(3) {
+        grid-column: 1/4;
+        background-image: url("../img/directions/directions-three-mob.jpg");
+
+        @media screen and (min-width: 768px) {
+            grid-column: 1/6;
+            background-image: url("../img/directions/directions-three-tablet.jpg");
+        }
+
+        @media screen and (min-width: 1366px) {
+            background-image: url("../img/directions/directions-three.jpg");
+        }
+
+
+        &:hover {
+            background-image: url("../img/directions/directions-three-hover.jpg");
+        }
+    }
+
+    &:nth-child(4) {
+        grid-column: 1/4;
+        background-image: url("../img/directions/directions-four-mob.jpg");
+        
+        @media screen and (min-width: 768px) {
+            grid-column: 6/13;
+            background-image: url("../img/directions/directions-four-tablet.jpg");
+        }
+
+        @media screen and (min-width: 1366px) {
+            background-image: url("../img/directions/directions-four.jpg");
+        }
+
+        &:hover {
+            background-image: url("../img/directions/directions-four-hover.jpg");
+        }
+
+    }
+
+    &:nth-child(5) {
+        grid-column: 1/4;
+        background-image: url("../img/directions/directions-five-mob.jpg");
+
+        @media screen and (min-width: 768px) {
+            grid-column: 1/5;
+            background-image: url("../img/directions/directions-five-tablet.jpg");
+        }
+
+        @media screen and (min-width: 1366px) {
+            background-image: url("../img/directions/directions-five.jpg");
+        }
+      
+
+        &:hover {
+            background-image: url("../img/directions/directions-five-hover.jpg");
+        }
+    }
+
+    &:nth-child(6) {
+        grid-column: 1/4;
+        background-image: url("../img/directions/directions-six-mob.jpg");
+      
+        @media screen and (min-width: 768px) {
+            grid-column: 5/9;
+            background-image: url("../img/directions/directions-six-tablet.jpg");
+        }
+
+        @media screen and (min-width: 1366px) {
+            background-image: url("../img/directions/directions-six.jpg");
+        }
+      
+
+        &:hover {
+            background-image: url("../img/directions/directions-six-hover.jpg");
+        }
+    }
+
+    &:nth-child(7) {
+        grid-column: 1/4;
+        background-image: url("../img/directions/directions-seven-mob.jpg");
+      
+        @media screen and (min-width: 768px) {
+            grid-column: 9/13;
+            background-image: url("../img/directions/directions-seven-tablet.jpg");
+        }
+
+        @media screen and (min-width: 1366px) {
+            background-image: url("../img/directions/directions-seven.jpg");
+        }
+      
+
+        &:hover {
+            background-image: url("../img/directions/directions-seven-hover.jpg");
+        }
+    }
+}
+
+.directions__link {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    height: 100%;
+    font-weight: 400;
+    font-size: 26px;
+    line-height: 100%;
+    color: var(--white-color);
+    transition: color .3s ease-in;
+
+          
+    @media screen and (min-width: 768px) {
+       
+        font-size: 30px;
+    }
+
+
+    @media screen and (min-width: 1366px) {
+        font-size: 45px;
+    }
+
+  
+    span {
+        padding-bottom: 6px;
+        max-width: 129px;
+        @media screen and (min-width: 768px) {
+            max-width: none;
+        }
+    
+    
+        @media screen and (min-width: 1366px) {
+            padding-bottom: 20px;
+            max-width: none;
+        }
+    }
+
+    svg {
+        width: 36px;
+        height: 28px;
+
+        @media screen and (min-width: 768px) {
+            width: 52px;
+            height: 42px;
+        }
+    
+    
+        @media screen and (min-width: 1366px) {
+            width: 72px;
+            height: 58px;
+        }
+       
+        path {
+            fill: var(--white-color);
+            transition: fill .3s ease-in;
+        }
+
+        rect {
+            fill: var(--white-color);
+            transition: fill .3s ease-in;
+        }
+    }
+    
+}
+
+.directions__decor {
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 1;
+    height: 100%;
+    object-fit: cover;
+}   

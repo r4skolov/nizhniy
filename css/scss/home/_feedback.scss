@@ -1,0 +1,54 @@
+.feedback {
+    
+}
+
+
+.feedback__wrapper {
+    background-color: var(--primary-color);
+    background-image: url("../img/feedback/feddback-bg.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 30px 14px;
+    border-radius: 20px;
+
+    @media screen and (min-width: 768px) {
+        padding: 40px 66px;
+    }
+
+
+    @media screen and (min-width: 1366px) {
+        border-radius: 30px;
+        padding: 40px 66px;
+    }
+
+    @media screen and (min-width: 768px) {
+       margin: 0 auto;
+        max-width: 780px;
+    }
+
+
+    @media screen and (min-width: 1366px) {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        max-width: none;
+    }
+}
+
+.feedback__image {
+    text-align: center;
+}
+
+.feedback__form {
+   
+
+    @media screen and (min-width: 768px) {
+
+    }
+ 
+ 
+     @media screen and (min-width: 1366px) {
+        margin-left: 92px;
+    }
+}

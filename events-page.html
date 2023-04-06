@@ -1,0 +1,400 @@
+<!DOCTYPE html>
+<html lang="ru" class="page">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1" />
+    <title>Мероприятия</title>
+    <link rel="stylesheet" href="css/fonts.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/events-page.css">
+</head>
+
+<body class="page__body">
+    <div class="site-container">
+        <header class="header">
+            <div class="container">
+                <div class="header__wrapper">
+                    <a href="#" class="header__logo">
+                        <img src="img/icon/logo.svg" alt="Нижний" width="162" height="45">
+                    </a>
+                    <nav class="nav" data-menu>
+                        <div class="serach-mob">
+                            <input type="text" placeholder="Что вы ищите?">
+                            <button class="btn-search-mob btn-reset">
+                                <svg width="40" height="40" viewBox="0 0 40 40" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd" clip-rule="evenodd"
+                                        d="M18.3333 6.66659C11.8899 6.66659 6.66659 11.8899 6.66659 18.3333C6.66659 24.7766 11.8899 29.9999 18.3333 29.9999C24.7766 29.9999 29.9999 24.7766 29.9999 18.3333C29.9999 11.8899 24.7766 6.66659 18.3333 6.66659ZM3.33325 18.3333C3.33325 10.049 10.049 3.33325 18.3333 3.33325C26.6175 3.33325 33.3333 10.049 33.3333 18.3333C33.3333 26.6175 26.6175 33.3333 18.3333 33.3333C10.049 33.3333 3.33325 26.6175 3.33325 18.3333Z"
+                                        fill="#8A94F3" />
+                                    <path fill-rule="evenodd" clip-rule="evenodd"
+                                        d="M26.5712 26.5712C27.222 25.9203 28.2773 25.9203 28.9282 26.5712L36.1782 33.8212C36.8291 34.472 36.8291 35.5273 36.1782 36.1782C35.5273 36.8291 34.472 36.8291 33.8212 36.1782L26.5712 28.9282C25.9203 28.2773 25.9203 27.222 26.5712 26.5712Z"
+                                        fill="#8A94F3" />
+                                </svg>
+                            </button>
+                        </div>
+                        <ul class="nav__list list-reset">
+                            <li class="nav__item">
+                                <a class="nav__link" href="#">
+                                    О проекте
+                                </a>
+                            </li>
+                            <li class="nav__item">
+                                <button class="nav__link btn-reset" type="button">
+                                    <span>Направления</span>
+                                    <img src="img/icon/chevron-down.svg" alt="">
+                                </button>
+                                <div class="nav__submenu">
+                                    <ul class="list-reset">
+                                        <li>
+                                            <a href="#">
+                                                Креатив
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#">
+                                                Знания
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#">
+                                                Волонтеры
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#">
+                                                Добрые дела
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#">
+                                                Карьера
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#">
+                                                Спорт
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#">
+                                                Своё дело
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <li class="nav__item">
+                                <a class="nav__link" href="#">
+                                    Мероприятия
+                                </a>
+                            </li>
+                            <li class="nav__item">
+                                <a class="nav__link" href="#">
+                                    В фокусе
+                                </a>
+                            </li>
+                            <li class="nav__item">
+                                <button class="nav__link btn-reset" type="button">
+                                    <span> День молодежи</span>
+                                    <img src="img/icon/chevron-down.svg" alt="">
+                                </button>
+                                <div class="nav__submenu">
+                                    <ul class="list-reset">
+                                        <li>
+                                            <a href="#">
+                                                Событийная афиша
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#">
+                                                Спецпроекты
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#">
+                                                Партнеры
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <li class="nav__item">
+                                <a class="nav__link" href="#">
+                                    Контакты
+                                </a>
+                            </li>
+                        </ul>
+                    </nav>
+                    <div class="header__wrap">
+                        <div class="header__search">
+                            <input type="text" placeholder="Что вы ищите?">
+                        </div>
+                        <button class="btn-search">
+                            <svg width="40" height="40" viewBox="0 0 40 40" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                    d="M18.3333 6.66659C11.8899 6.66659 6.66659 11.8899 6.66659 18.3333C6.66659 24.7766 11.8899 29.9999 18.3333 29.9999C24.7766 29.9999 29.9999 24.7766 29.9999 18.3333C29.9999 11.8899 24.7766 6.66659 18.3333 6.66659ZM3.33325 18.3333C3.33325 10.049 10.049 3.33325 18.3333 3.33325C26.6175 3.33325 33.3333 10.049 33.3333 18.3333C33.3333 26.6175 26.6175 33.3333 18.3333 33.3333C10.049 33.3333 3.33325 26.6175 3.33325 18.3333Z"
+                                    fill="#8A94F3" />
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                    d="M26.5712 26.5712C27.222 25.9203 28.2773 25.9203 28.9282 26.5712L36.1782 33.8212C36.8291 34.472 36.8291 35.5273 36.1782 36.1782C35.5273 36.8291 34.472 36.8291 33.8212 36.1782L26.5712 28.9282C25.9203 28.2773 25.9203 27.222 26.5712 26.5712Z"
+                                    fill="#8A94F3" />
+                            </svg>
+                        </button>
+                        <button class="burger btn-reset" aria-label="Открыть меню" aria-expanded="false" data-burger>
+                            <svg width="43" height="35" viewBox="0 0 43 35" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                    d="M0 2.91665C0 1.30583 1.28345 0 2.86667 0H40.1333C41.7165 0 43 1.30583 43 2.91665C43 4.52747 41.7165 5.8333 40.1333 5.8333H2.86667C1.28345 5.8333 0 4.52747 0 2.91665ZM0 17.4997C0 15.8889 1.28345 14.5831 2.86667 14.5831H40.1333C41.7165 14.5831 43 15.8889 43 17.4997C43 19.1105 41.7165 20.4164 40.1333 20.4164H2.86667C1.28345 20.4164 0 19.1105 0 17.4997ZM2.86667 29.1666C1.28345 29.1666 0 30.4725 0 32.0833C0 33.6941 1.28345 34.9999 2.86667 34.9999H40.1333C41.7165 34.9999 43 33.6941 43 32.0833C43 30.4725 41.7165 29.1666 40.1333 29.1666H2.86667Z"
+                                    fill="white" />
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </header>
+       
+        <main class="main main--secondary">
+           <div class="breadcrumbs">
+                <div class="container breadcrumbs__container">
+                    <ul class="breadcrumbs__list list-reset">
+                        <li class="breadcrumbs__item">
+                            <a href="#" class="breadcrumbs__link">
+                                Главная
+                            </a>
+                        </li>
+                        <li class="breadcrumbs__item">
+                            <a href="#" class="breadcrumbs__link">
+                                Мероприятия
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+           </div>
+            <div class="events-page">
+                <div class="container events-page__container">
+                    <div class="events-page__head">
+                        <h2 class="events-page__title">
+                            День студента пройдет в «Рекорде»
+                        </h2>
+                        <div class="event-page__date">
+                            25  - 29 февраля 2023 г.
+                        </div>
+                    </div>
+                    <div class="events-page__wrapper">
+                        <div class="evenets-page__img">
+                            <img src="img/events-page/poster.jpg" alt=" День студента пройдет в «Рекорде»" width="1120" height="560">
+                        </div>
+                        <div class="event-page__text">
+                            <p>
+                                Сложно сказать, почему сделанные на базе интернет-аналитики выводы будут заблокированы в рамках своих собственных рациональных ограничений.
+                            </p>
+                            <p>
+                                Внезапно, сторонники тоталитаризма в науке формируют глобальную экономическую сеть и при этом — подвергнуты целой серии независимых исследований. Лишь явные признаки победы институционализации будут указаны как претенденты на роль ключевых факторов. Прежде всего, глубокий уровень погружения предполагает независимые способы реализации укрепления моральных ценностей.                           
+                            </p>
+                            <p>
+                                Мы вынуждены отталкиваться от того, что существующая теория обеспечивает широкому кругу (специалистов) участие в формировании соответствующих условий активизации. С учётом сложившейся международной обстановки, сплочённость команды профессионалов обеспечивает актуальность дальнейших направлений развития! Являясь всего лишь частью общей картины, акционеры крупнейших компаний освещают чрезвычайно интересные особенности картины в целом, однако конкретные выводы, разумеется, разоблачены.                        
+                            </p>
+                            <p>
+                                В своём стремлении улучшить пользовательский опыт мы упускаем, что ключевые особенности структуры проекта призывают нас к новым свершениям, которые, в свою очередь, должны быть подвергнуты целой серии независимых исследований. А также реплицированные с зарубежных источников, современные исследования неоднозначны и будут призваны к ответу.                   
+                            </p>
+                            <p>
+                                В целом, конечно, сложившаяся структура организации не оставляет шанса для экспериментов, поражающих по своей масштабности и грандиозности. Каждый из нас понимает очевидную вещь: постоянное информационно-пропагандистское обеспечение нашей деятельности представляет собой интересный эксперимент проверки инновационных методов управления процессами.          
+                            </p>
+                        </div>
+                        <div class="events-page__social">
+                            <div class="events-page__share">
+                                Поделиться:
+                            </div>
+                            <ul class="events-page__socials list-reset">
+                                <li>
+                                    <a href="#">
+                                        <svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M11.8931 17C5.0599 17 1.1624 12.4955 1 5H4.42286C4.53529 10.5015 7.05865 12.8318 9.0574 13.3123V5H12.2805V9.74474C14.2543 9.54054 16.3277 7.37838 17.0273 5H20.2503C19.7132 7.93093 17.4646 10.0931 15.8656 10.982C17.4646 11.7027 20.0256 13.5886 21 17H17.4521C16.6901 14.7177 14.7914 12.952 12.2805 12.7117V17H11.8931Z" fill="#A9B0F4"/>
+                                            </svg>
+                                            
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path fill-rule="evenodd" clip-rule="evenodd" d="M3.16866 10.4574C7.73205 8.34056 10.775 6.945 12.2976 6.27074C16.6448 4.34558 17.5481 4.01116 18.1369 4.00012C18.2664 3.99769 18.5559 4.03186 18.7435 4.19389C18.9018 4.33071 18.9454 4.51553 18.9663 4.64524C18.9871 4.77496 19.0131 5.07046 18.9924 5.30136C18.7569 7.93675 17.7375 14.3322 17.2189 17.2838C16.9995 18.5328 16.5674 18.9516 16.1492 18.9926C15.2401 19.0816 14.5498 18.3529 13.6694 17.7384C12.2916 16.7769 11.5133 16.1783 10.176 15.24C8.63045 14.1556 9.63235 13.5596 10.5131 12.5856C10.7436 12.3307 14.7489 8.45188 14.8264 8.10001C14.8361 8.05601 14.8451 7.89197 14.7536 7.80535C14.6621 7.71873 14.527 7.74835 14.4295 7.77191C14.2913 7.8053 12.0904 9.35418 7.82663 12.4185C7.2019 12.8753 6.63604 13.0978 6.12904 13.0862C5.57012 13.0733 4.49499 12.7497 3.69573 12.4731C2.71541 12.1338 1.93627 11.9544 2.00412 11.3782C2.03946 11.0781 2.42764 10.7712 3.16866 10.4574Z" fill="#A9B0F4"/>
+                                            </svg>
+                                            
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M11.5242 11.303C14.2199 11.303 16.4175 9.21399 16.4175 6.65148C16.4175 4.08899 14.2199 2 11.5242 2C8.79917 2 6.60156 4.08899 6.60156 6.65148C6.60156 9.21399 8.79917 11.303 11.5242 11.303ZM11.5242 4.72962C12.6377 4.72962 13.546 5.59306 13.546 6.65148C13.546 7.7099 12.6377 8.57336 11.5242 8.57336C10.4107 8.57336 9.50241 7.7099 9.50241 6.65148C9.47311 5.59306 10.3815 4.72962 11.5242 4.72962Z" fill="#A9B0F4"/>
+                                            <path d="M13.486 15.1187C14.4822 14.8959 15.4492 14.5338 16.3282 14.0046C17.0021 13.6147 17.2073 12.7512 16.7677 12.1106C16.3575 11.47 15.4492 11.275 14.7753 11.6928C12.7828 12.8905 10.1749 12.8905 8.18243 11.6928C7.5085 11.3029 6.62945 11.47 6.18993 12.1106C5.80901 12.7512 6.01412 13.5868 6.68805 13.9768C7.5671 14.506 8.53404 14.8681 9.53029 15.0909L6.80526 17.6813C6.24853 18.2105 6.24853 19.074 6.80526 19.6032C7.09828 19.8817 7.44989 19.9931 7.83081 19.9931C8.21173 19.9931 8.56334 19.8538 8.85636 19.6032L11.5521 17.0406L14.2478 19.6032C14.8045 20.1323 15.7129 20.1323 16.2696 19.6032C16.8263 19.074 16.8263 18.2105 16.2696 17.6813L13.486 15.1187Z" fill="#A9B0F4"/>
+                                            </svg>                                            
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+        <footer class="footer">
+            <div class="container">
+                <div class="footer__top">
+                    <div class="footer__wrap">
+                        <a href="#" class="footer__logo">
+                            <img src="img/icon/logo.svg" alt="Нижний" width="162" height="45">
+                        </a>
+                        <ul class="socials list-reset">
+                            <li>
+                                <a href="#" target="_blank" class="socials__link">
+                                    <svg width="30" height="30" viewBox="0 0 30 30" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M16.2178 23.1818C6.89975 23.1818 1.58498 17.0392 1.36353 6.81812H6.03106C6.18438 14.3202 9.62532 17.4979 12.3509 18.1531V6.81812H16.746V13.2882C19.4375 13.0098 22.265 10.0614 23.2189 6.81812H27.614C26.8815 10.8148 23.8152 13.7632 21.6348 14.9754C23.8152 15.9582 27.3075 18.5298 28.6363 23.1818H23.7982C22.7591 20.0695 20.17 17.6617 16.746 17.3341V23.1818H16.2178Z"
+                                            fill="#8A94F3" />
+                                    </svg>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" target="_blank" class="socials__link">
+                                    <svg width="30" height="30" viewBox="0 0 30 30" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path fill-rule="evenodd" clip-rule="evenodd"
+                                            d="M4.32092 14.2601C10.5437 11.3735 14.6932 9.4705 16.7695 8.55105C22.6975 5.92584 23.9293 5.46981 24.7322 5.45475C24.9087 5.45144 25.3036 5.49803 25.5593 5.71899C25.7753 5.90555 25.8347 6.15758 25.8631 6.33447C25.8915 6.51136 25.927 6.91431 25.8988 7.22917C25.5776 10.8229 24.1876 19.5439 23.4804 23.5689C23.1812 25.2721 22.592 25.8431 22.0216 25.899C20.782 26.0205 19.8407 25.0268 18.6401 24.1888C16.7613 22.8776 15.7 22.0614 13.8763 20.7819C11.7688 19.3032 13.135 18.4905 14.3361 17.1623C14.6504 16.8147 20.1122 11.5253 20.2179 11.0455C20.2311 10.9855 20.2434 10.7618 20.1186 10.6437C19.9937 10.5256 19.8095 10.566 19.6766 10.5981C19.4882 10.6436 16.4869 12.7557 10.6727 16.9344C9.8208 17.5573 9.04917 17.8607 8.35781 17.8448C7.59565 17.8273 6.12955 17.386 5.03965 17.0088C3.70286 16.5461 2.64039 16.3015 2.73291 15.5158C2.7811 15.1065 3.31044 14.688 4.32092 14.2601Z"
+                                            fill="#8A94F3" />
+                                    </svg>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="footer__group">
+                        <a href="#" class="footer-link">
+                            О проекте
+                        </a>
+                    </div>
+                    <div class="footer__group dropdown-footer">
+                        <button class="footer-link btn-reset">
+                            <span>Направления</span>
+                            <img src="img/icon/chevron-down.svg" alt="">
+                        </button>
+                        <ul class="footer-nav list-reset">
+                            <li>
+                                <a href="#">
+                                    Креатив
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    Знания
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    Волонтеры
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    Добрые дела
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    Карьера
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    Спорт
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    Своё дело
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="footer__group">
+                        <a href="#" class="footer-link">
+                            Мероприятия
+                        </a>
+                    </div>
+                    <div class="footer__group">
+                        <a href="#" class="footer-link">
+                            В фокусе
+                        </a>
+                    </div>
+                    <div class="footer__group dropdown-footer">
+                        <button class="footer-link btn-reset">
+                            <span>День молодежи</span>
+                            <img src="img/icon/chevron-down.svg" alt="">
+                        </button>
+                        <ul class="footer-nav list-reset">
+                            <li>
+                                <a href="#">
+                                    Событийная афиша
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    Спецпроекты
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    Партнеры
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="footer__group">
+                        <a href="#" class="footer-link">
+                            Контакты
+                        </a>
+                    </div>
+                </div>
+                <div class="footer__bottom">
+                    <div class="footer__links">
+                        <a href="#" class="footer__link">
+                            <span>Политика конфиденциальности</span>
+                        </a>
+                        <a href="#" class="footer__link">
+                            <span> Пользовательское соглашение</span>
+                        </a>
+                    </div>
+                    <div class="footer__copyright">
+                        © Нижний Новгород Молодежная столица России
+                    </div>
+                    <a href="#" class="footer__link footer__link--nounderline">
+                        <span> Разработано R-top</span>
+                    </a>
+                </div>
+            </div>
+        </footer>
+        <div class="modals">
+            <div class="overlay js-overlay"></div>
+            <div class="popup popup--succsess js-popup" data-popup="some-popup">
+            <button type="button" class="popup__close js-popup-close btn-reset"></button>
+            <div class="popup__wrap">
+                <div class="poupp__head">
+                    <h3 class="popup__title">
+                        Успешно
+                    </h3>
+                    <img class="popup__icon" src="img/icon/ok.svg" alt="" width="56" height="52">
+                </div>
+                <div class="popup__text">
+                    <p>
+                        Благодарим вас за предложенные идеи! Менеджер свяжется с вами в ближайшее время.
+                    </p>
+                </div>
+            </div>
+            </div>
+        </div>
+    </div>
+    <script src="libs/pristie.js"></script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>
