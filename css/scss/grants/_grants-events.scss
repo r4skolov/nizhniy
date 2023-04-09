@@ -1,0 +1,44 @@
+.swiper--events {
+    margin: 0 -15px;
+    padding-top: 20px;
+    .swiper-slide {
+        width: 50%;
+        height: auto;
+
+        @media screen and (min-width: 768px) {
+            width: 33%;
+        }
+        
+        
+        @media screen and (min-width: 1366px) {
+           
+        }
+    }
+
+    .swiper-pagination {
+        position: unset;
+        margin-top: 14px;
+
+        @media screen and (min-width: 768px) {
+            display: none;
+        }
+        
+        
+        @media screen and (min-width: 1366px) {
+           
+        }
+    }
+
+    .events__item {
+        margin: 0 16px;
+
+        @media screen and (min-width: 768px) {
+            
+        }
+        
+        
+        @media screen and (min-width: 1366px) {
+            margin: 0 15px;
+        }
+    }
+}

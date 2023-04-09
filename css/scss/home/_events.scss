@@ -234,18 +234,19 @@
     display: flex;
     flex-direction: column;
     height: 228px;
-
+    position: relative;
+  
     @media screen and (min-width: 768px) {
         grid-column: 4 span;
         height: 362px;
     }
-
-
+  
+  
     @media screen and (min-width: 1366px) {
         border-radius: 30px;
         height: 438px;
     }
-
+  
     &:hover {
         box-shadow: 0px 0px 14px rgba(169, 176, 244, 0.36);
         border: 1px solid #A9B0F4;
@@ -256,74 +257,106 @@
             }
         }
     }
-}
-
-.events__item--none {
+  }
+  
+  .events__tag {
+    font-weight: 400;
+    font-size: 10px;
+    line-height: 100%;
+    text-align: center;
+    color: var(--primary-color);
+    background-color: var(--white-color);
+    padding: 2.5px 5px;
+    border: 1px solid #FFFFFF;
+    border-radius: 30px;
+    position: absolute;
+    top: 8px;
+    right: 8px;
+    z-index: 1;
+  
+    @media screen and (min-width: 768px) {
+     
+    }
+  
+  
+    @media screen and (min-width: 1366px) {
+      top: 14px;
+      right: 14px;
+      font-size: 14px;
+      padding: 5.5px 15px;
+    }
+  }
+  
+  .events__item--none {
     opacity: 0.5;
     pointer-events: none;
-
+  
     .events__date {
         color: #808080;
     }
-
+  
     .events__name {
         color: #808080;
     }
-
+  
     &:last-child {
         display: none;
-
+  
         @media screen and (min-width: 768px) {
           display: flex;
         }
     
     }
-}
-
-.events__img {
+  }
+  
+  .events__slider {
+    margin-top: -20px;
+  }
+  
+  .events__img {
     border-top-left-radius: 20px;
     border-top-left-radius: 20px;
     overflow: hidden;
     max-height: 104px;
     font-size: 0;
-
+  
     
     @media screen and (min-width: 768px) {
         max-height: 169px;
     }
-
-
+  
+  
     @media screen and (min-width: 1366px) {
         max-height: 263px;
         border-top-left-radius: 30px;
         border-top-left-radius: 30px;
     }
-
+  
     img {
         width: 100%;
         height: 100%;
         object-fit: cover;
         transition: transform .3s ease;
     }
-}
-
-.events__wrap {
+  }
+  
+  .events__wrap {
     padding: 8px 8px;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-
+  
     @media screen and (min-width: 768px) {
         padding:14px 14px 19px 14px;
     }
-
-
+  
+  
     @media screen and (min-width: 1366px) {
         padding: 20px 20px;
     }
-}
-
-.events__name {
+  }
+  
+  .events__name {
     font-weight: 400;
     font-size: 14px;
     line-height: 120%;
@@ -334,38 +367,39 @@
     overflow: hidden;
     -o-text-overflow: ellipsis;
     text-overflow: ellipsis;
-
+  
     @media screen and (min-width: 768px) {
         font-size: 18px;
     }
-
-
+  
+  
     @media screen and (min-width: 1366px) {
         font-size: 24px;
         -webkit-line-clamp: 3;
     }
-}
-
-.events__date {
-
+  }
+  
+  .events__date {
+  
     font-weight: 400;
     font-size: 14px;
     line-height: 114%;
     color: #3344E5;
     margin-bottom: 15px;
-
+  
     @media screen and (min-width: 768px) {
          margin-bottom: 22px;
          font-size: 24px;
         line-height: 114%;
     }
-
-
+  
+  
     @media screen and (min-width: 1366px) {
         font-size: 26px;
         line-height: 100%;
     }
-}
+  }
+
 
 .events__calendar {
     position: relative;
@@ -389,67 +423,69 @@
     }
 }
 
-    .calendar-text {
-        font-weight: 400;
-        font-size: 16px;
-        line-height: 100%;
-        color: #A9B0F4;
-        position: absolute;
-        pointer-events: none;
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-        width: 178px;
+.calendar-text {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 100%;
+    color: #A9B0F4;
+    position: absolute;
+    pointer-events: none;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 178px;
+    height: 32px;
+    z-index: 100;
+    cursor: pointer;
+    transition: color .3s ease;
+
+    @media screen and (min-width: 768px) {
+        
+    }
+
+
+    @media screen and (min-width: 1366px) {
+        font-size: 18px;
+        width: 200px;
         height: 32px;
-        z-index: 100;
-        cursor: pointer;
+    }
+
+
+    &.hover {
+        color: var(--primary-color);
         transition: color .3s ease;
-
-        @media screen and (min-width: 768px) {
-            
-        }
-
-
-        @media screen and (min-width: 1366px) {
-            font-size: 18px;
-            width: 200px;
-            height: 32px;
-        }
-
-
-        &.hover {
-            color: var(--primary-color);
-            transition: color .3s ease;
-            svg {
-                transform: rotate(0deg);
-                transition: transform .3s ease, fill .3s ease;
-                path {
-                    fill: var(--primary-color);
-                    transition: transform .3s ease, fill .3s ease;
-                }
-            }
-        }
-
-        &.active {
-            color: var(--primary-color);
-            transition: color .3s ease;
-            svg {
-                transform: rotate(180deg);
-                transition: transform .3s ease, fill .3s ease;
-                path {
-                    fill: var(--primary-color);
-                    transition: transform .3s ease, fill .3s ease;
-                }
-            }
-        }
-
         svg {
             transform: rotate(0deg);
             transition: transform .3s ease, fill .3s ease;
-    
             path {
-               fill: #A9B0F4;
-               transition: transform .3s ease, fill .3s ease;
+                fill: var(--primary-color);
+                transition: transform .3s ease, fill .3s ease;
             }
         }
     }
+
+    &.active {
+        color: var(--primary-color);
+        transition: color .3s ease;
+        svg {
+            transform: rotate(180deg);
+            transition: transform .3s ease, fill .3s ease;
+            path {
+                fill: var(--primary-color);
+                transition: transform .3s ease, fill .3s ease;
+            }
+        }
+    }
+
+    svg {
+        transform: rotate(0deg);
+        transition: transform .3s ease, fill .3s ease;
+
+        path {
+            fill: #A9B0F4;
+            transition: transform .3s ease, fill .3s ease;
+        }
+    }
+}
+
+

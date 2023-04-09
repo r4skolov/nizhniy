@@ -221,6 +221,19 @@
     }
 }
 
+.advantages__title {
+    margin-bottom: 26px;
+
+    @media screen and (min-width: 768px) {
+         margin-bottom: 32px;
+    }
+
+
+    @media screen and (min-width: 1366px) {
+        margin-bottom: 38px;
+    }
+}
+
 .advantages__wrapper {
     background-color: #EEEFFD;
     border: 1px solid #A9B0F4;

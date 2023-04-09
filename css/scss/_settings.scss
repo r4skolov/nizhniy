@@ -65,7 +65,15 @@ a{
 
   &--secondary {
     background-color: var(--white-color);
-    padding: 100px 0 0 0 ;
+    padding: 60px 0 180px 0 ;
+
+    @media screen and (min-width: 786px) {
+      padding: 80px 0 210px 0 ;
+    }
+  
+    @media screen and (min-width: 1366px) {
+      padding: 100px 0 250px 0 ;
+    }
   }
 }
 
@@ -211,7 +219,7 @@ img {
       color: var(--white-color);
 
       &:hover {
-          background-color: #BEF900;
+          background-color: var(--primary-color);
       }
   }
 
@@ -230,16 +238,16 @@ img {
         transition: color .3s ease-in;
 
         &:hover {
-            color: #3344E5;
+            color: var(--primary-color);
 
             svg {
                 path {
-                    fill: #3344E5;
+                    fill: var(--primary-color);
                     transition: fill .3s ease-in;
                 }
 
                 rect {
-                    fill: #3344E5;
+                    fill: var(--primary-color);
                     transition: fill .3s ease-in;
                 }
             }
@@ -363,7 +371,7 @@ img {
     &__list {
       display: flex;
       flex-direction: column;
-      background-color: #4256FF;
+      background-color: var(--primary-color);
       border: 1px solid #A9B0F4;
       border-radius: 30px;
       position: absolute;
@@ -481,6 +489,63 @@ img {
     }
 }
 
+.swiper-button-topical {
+  cursor: pointer;
+  width: 34px;
+  height: 27px;
+
+  @media screen and (min-width: 768px) {
+     width: 43px;
+     height: 40px;
+  }
+
+  @media screen and (min-width: 1366px) {
+      
+  }
+
+  &+& {
+      margin-left: 25px;
+
+      @media screen and (min-width: 768px) {
+          margin-left: 38px;
+      }
+  
+      @media screen and (min-width: 1366px) {
+          
+      }
+  }
+  svg {
+      width: 34px;
+      height: 27px;
+
+      @media screen and (min-width: 768px) {
+          width: 43px;
+          height: 40px;
+       }
+   
+      path {
+          transition: fill .3s ease;
+      }
+      rect {
+          transition: fill .3s ease;
+      }
+  }
+
+  &:hover {
+      svg {
+          path {
+              fill: var(--primary-color);
+              transition: fill .3s ease;
+          }
+
+          rect {
+              fill: var(--primary-color);
+              transition: fill .3s ease;
+          }
+      }
+  }
+}
+
 .swiper-pagination-bullet {
   width: 10px;
   height: 10px;
@@ -495,7 +560,7 @@ img {
 }
 
 .swiper-pagination-bullet.swiper-pagination-bullet-active {
-  background-color: #3344E5;
+  background-color: var(--primary-color);
   border: 2px solid transparent;
 }
 
@@ -628,6 +693,46 @@ img {
   width: 100%;
 }
 
+.first-section--valounteer {
+  background-image: url("../img/volunteer/hero/sub-hero-mob.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: bottom -41px right 0px;
+  background-attachment: fixed;
+
+  
+  @media screen and (min-width: 768px) {
+    background-image: url("../img/volunteer/hero/sub-hero-tablet.jpg");
+    background-position: bottom right -160px;
+  }
+
+
+  @media screen and (min-width: 1366px) {
+    background-image: url("../img/volunteer/hero/sub-hero-desktop.jpg");
+    background-position: center center;
+  }
+}
+
+.first-section--grants {
+  background-image: url("../img/grants/hero/hero-grants-mobile.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: top 41px right 0px;
+  background-attachment: fixed;
+
+  
+  @media screen and (min-width: 768px) {
+    background-image: url("../img/grants/hero/hero-grants-tablet.jpg");
+    background-position: bottom right -160px;
+  }
+
+
+  @media screen and (min-width: 1366px) {
+    background-image: url("../img/grants/hero/hero-grants-desktop.jpg");
+    background-position: center center;
+  }
+}
+
 .first-section__wrapper {
   position: fixed;
   top: 0;
@@ -709,3 +814,4 @@ img {
     max-width: 674px;
   }
 }
+
