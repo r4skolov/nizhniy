@@ -694,22 +694,24 @@ img {
 }
 
 .first-section--valounteer {
-  background-image: url("../img/volunteer/hero/sub-hero-mob.jpg");
+  background-image: url("../img/volunteer/hero/sub-hero-mob.png");
+  background-size: 375px 337px;
+  background-position: right -53px top 12px;
   background-repeat: no-repeat;
-  background-size: cover;
-  background-position: bottom -41px right 0px;
   background-attachment: fixed;
 
   
   @media screen and (min-width: 768px) {
-    background-image: url("../img/volunteer/hero/sub-hero-tablet.jpg");
-    background-position: bottom right -160px;
+    background-image: url("../img/volunteer/hero/sub-hero-tablet.png");
+    background-size: 708px 628px;
+    background-position: right -114px top 31px;
   }
 
 
   @media screen and (min-width: 1366px) {
-    background-image: url("../img/volunteer/hero/sub-hero-desktop.jpg");
-    background-position: center center;
+    background-image: url("../img/volunteer/hero/sub-hero-desktop.png");
+    background-size: 716px 544px;
+    background-position: right top 92px;
   }
 }
 
@@ -774,7 +776,7 @@ img {
 }
 
 .first-section__wrap {
-  padding: 104px 0 82px 0;
+  padding: 104px 0 36px 0;
   min-height: 636px;
   display: flex;
   flex-direction: column;
@@ -833,7 +835,7 @@ img {
   @media screen and (min-width: 768px) {
     font-size: 16px;
     margin-bottom: 52px;
-    max-width: 440px;
+    max-width: 400px;
   }
 
 
