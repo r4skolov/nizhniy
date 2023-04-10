@@ -1100,6 +1100,10 @@
   }
 }
 
+.feedback--creative .feedback__image {
+  margin-bottom: 0;
+}
+
 .focus {
   padding: 55px 0 110px 0;
 }

@@ -1,0 +1,213 @@
+.creative-space {
+  padding: 55px 0;
+}
+@media screen and (min-width: 768px) {
+  .creative-space {
+    padding: 65px 0;
+  }
+}
+.creative-space__title {
+  margin-bottom: 30px;
+}
+@media screen and (min-width: 768px) {
+  .creative-space__title {
+    margin-bottom: 34px;
+  }
+}
+@media screen and (min-width: 1366px) {
+  .creative-space__title {
+    margin-bottom: 40px;
+  }
+}
+
+.creative-space__grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 25px;
+}
+@media screen and (min-width: 768px) {
+  .creative-space__grid {
+    grid-gap: 30px;
+    grid-template-columns: repeat(12, 1fr);
+  }
+}
+.card-item--creative {
+  grid-column: 4 span;
+  margin: 0;
+}
+
+.creative-space__btn {
+  margin-top: 50px;
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+}
+@media screen and (min-width: 768px) {
+  .creative-space__btn {
+    margin-top: 56px;
+  }
+}
+@media screen and (min-width: 1366px) {
+  .creative-space__btn {
+    margin-top: 72px;
+  }
+}
+
+.programs {
+  padding: 55px 0;
+}
+@media screen and (min-width: 768px) {
+  .programs {
+    padding: 65px 0;
+  }
+}
+.programs__title {
+  margin-bottom: 30px;
+}
+@media screen and (min-width: 1366px) {
+  .programs__title {
+    margin-bottom: 40px;
+  }
+}
+
+.programs__grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 25px;
+}
+@media screen and (min-width: 768px) {
+  .programs__grid {
+    grid-template-columns: repeat(12, 1fr);
+    grid-gap: 14px 19px;
+  }
+}
+@media screen and (min-width: 1366px) {
+  .programs__grid {
+    grid-gap: 30px 24px;
+  }
+}
+
+.programs-item {
+  border-radius: 19px;
+  overflow: hidden;
+  position: relative;
+  z-index: 1;
+  cursor: pointer;
+}
+@media screen and (min-width: 1366px) {
+  .programs-item {
+    border-radius: 29px;
+  }
+}
+.programs-item::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  z-index: 2;
+}
+.programs-item:nth-child(1) {
+  grid-column: 4 span;
+}
+@media screen and (min-width: 768px) {
+  .programs-item:nth-child(1) {
+    grid-column: 6 span;
+    grid-row: 1/4;
+  }
+}
+.programs-item:nth-child(1)::before {
+  background: linear-gradient(0.61deg, #212121 -12.09%, rgba(33, 33, 33, 0) 93.57%);
+}
+.programs-item:nth-child(2) {
+  grid-column: 4 span;
+}
+@media screen and (min-width: 768px) {
+  .programs-item:nth-child(2) {
+    grid-column: 6 span;
+    grid-row: 1/2;
+  }
+}
+.programs-item:nth-child(2)::before {
+  background: linear-gradient(0deg, #212121 -4.44%, rgba(33, 33, 33, 0) 105.41%);
+}
+.programs-item:nth-child(3) {
+  grid-column: 4 span;
+}
+@media screen and (min-width: 768px) {
+  .programs-item:nth-child(3) {
+    grid-column: 6 span;
+    grid-row: 2/4;
+  }
+}
+.programs-item:nth-child(3)::before {
+  background: linear-gradient(0deg, #212121 -4.44%, rgba(33, 33, 33, 0) 105.41%);
+}
+.programs-item img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.programs__about {
+  position: absolute;
+  bottom: 13px;
+  left: 13px;
+  z-index: 3;
+}
+@media screen and (min-width: 768px) {
+  .programs__about {
+    bottom: 20px;
+    left: 20px;
+  }
+}
+@media screen and (min-width: 1366px) {
+  .programs__about {
+    bottom: 30px;
+    left: 30px;
+  }
+}
+
+.programs__name {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 110%;
+  color: var(--white-color);
+  margin-bottom: 6px;
+  display: -webkit-box;
+  -webkit-line-clamp: 1;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+@media screen and (min-width: 768px) {
+  .programs__name {
+    font-size: 22px;
+    margin-bottom: 10px;
+  }
+}
+@media screen and (min-width: 1366px) {
+  .programs__name {
+    font-size: 30px;
+    margin-bottom: 20px;
+  }
+}
+
+.programs__info {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 106.5%;
+  color: var(--white-color);
+}
+@media screen and (min-width: 768px) {
+  .programs__info {
+    font-size: 20px;
+  }
+}
+@media screen and (min-width: 1366px) {
+  .programs__info {
+    font-size: 22px;
+  }
+}/*# sourceMappingURL=creative.css.map */
