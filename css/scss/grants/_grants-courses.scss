@@ -48,8 +48,7 @@
     flex-direction: column;
     height: 100%;
     margin: 0 15px;
-    transition: box-shadow 0.3s ease,  transform 0.3s ease;
-    transform: translateY(0);
+    transition: box-shadow 0.3s ease,  color 0.3s ease;
 
     @media screen and (min-width: 768px) {
         
@@ -61,14 +60,9 @@
     }
 
     &:hover {
-        transform: translateY(-10px);
         box-shadow: 0px 0px 14px rgba(169, 176, 244, 0.36);
-        .grants-item__img {
-           
-            img {
-                transform: scale(1.1);
-                transition: transform 0.3s ease;
-            }
+        .grants-item__button {
+            color: var(--primary-color);
         }
     }
 }
@@ -93,8 +87,6 @@
         width: 100%;
         height: 100%;
         object-fit: cover;
-        transition: transform 0.3s ease;
-        transform: scale(1);
         display: block;
      }
 }
@@ -167,9 +159,12 @@
     font-weight: 400;
     font-size: 16px;
     line-height: 106.5%;
-    color: var(--primary-color);
+    color:  #A9B0F4;;
     background-color: transparent;
     border: none;
+    cursor: pointer;
+    padding: 0;
+    transition: color 0.3s ease;
 
     @media screen and (min-width: 768px) {
        
@@ -182,12 +177,13 @@
 }
 
 .grants-courses__slider {
-    margin-top: -20px;
+    margin-bottom: -20px;
 }
 
 .swiper--grants {
     margin: 0 -15px;
-    padding-top: 20px;
+    padding-bottom: 20px;
+ 
     .swiper-slide {
         width: 100%;
         height: auto;
