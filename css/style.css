@@ -228,7 +228,7 @@ img {
   color: var(--white-color);
 }
 .b-btn--main:hover {
-  background-color: var(--primary-color);
+  background-color: #3447FF;
 }
 .b-btn--primary {
   background-color: var(--secondary-color);
